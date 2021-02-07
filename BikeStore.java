@@ -1,5 +1,10 @@
+/*
+ * Jonathan Brown 
+ * CSCE 247
+ * 2/6/2021
+ */
 package Bike;
-
+// this builds the bike when given name of bike
 public class BikeStore extends Bike {
 	public Bike orderBike(String aname)
 	{

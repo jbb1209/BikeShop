@@ -1,11 +1,17 @@
+/*
+ * Jonathan Brown 
+ * CSCE 247
+ * 2/6/2021
+ */
 package Bike;
-
+// base class for the other bike
 public abstract class  Bike {
 	String name;
 	double price;
 	int numWheels;
 	boolean hasPedals;
 	boolean hasTrainingWheels;
+	//creates bike
 	public void createBike()
 	{
 		createFrame();
@@ -14,10 +20,12 @@ public abstract class  Bike {
 		getPrice();
 		System.out.print("They cost "+"$"+price);
 	}
+	// prints out frame
 	public void createFrame()
 	{
 		System.out.println("Assembling "+ name +"frame ");
 	}
+	//prints out wheels
 	public void addWheels()
 	{
 		if (numWheels != 0)
@@ -40,6 +48,7 @@ public abstract class  Bike {
 		else
 			System.out.print("");
 	}
+	// prints out pedals
 	public void addPedals()
 	{
 		if(hasPedals= true)
@@ -49,6 +58,7 @@ public abstract class  Bike {
 		else
 			System.out.print("");
 	}
+	// return cost of bike
 	public double getPrice()
 	{
 		return price;
